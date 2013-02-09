@@ -1,0 +1,42 @@
+---
+abstract: 'Like parent, but with version checks'
+author:
+  - 'David Golden <dagolden@cpan.org>'
+build_requires:
+  Config: 0
+  File::Find: 0
+  File::Temp: 0
+  Test::More: 0
+  vars: 0
+configure_requires:
+  ExtUtils::MakeMaker: 6.30
+dynamic_config: 0
+generated_by: 'Dist::Zilla version 4.300029, CPAN::Meta::Converter version 2.120921'
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: inherit
+no_index:
+  directory:
+    - t
+    - xt
+    - examples
+    - corpus
+  package:
+    - DB
+provides:
+  inherit:
+    file: lib/inherit.pm
+    version: 0.001
+requires:
+  Module::Load: 0.24
+  perl: 5.008001
+  strict: 0
+  version: 0.9901
+  warnings: 0
+resources:
+  bugtracker: https://github.com/dagolden/inherit/issues
+  homepage: https://metacpan.org/release/inherit
+  repository: git://github.com/dagolden/inherit.git
+version: 0.001
